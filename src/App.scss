@@ -1,0 +1,138 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.container {
+    text-align: center;
+
+
+
+    h1 {
+        font-size: 20px;
+        color: #081c15;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: #1b4332;
+        margin: 20px;
+    }
+}
+
+.coordinates {
+
+    &__container {
+        // width: 100%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-around;
+        align-items: center;        
+        background: #2d6a4f;
+        color: #d8f3dc;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+    }
+
+    &__item {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #b7e4c7;
+        }
+
+        span {
+            transition: all ease 1s;
+        }
+    }
+}
+
+.image {
+    &__wrapper {
+        margin: 50px 0;
+    }
+
+    &__container {
+        img {
+            border: 1px solid #40916c;
+        }
+    }
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    margin: 20px 0;
+    transition: all ease 0.1s;
+    border: 2px solid #40916c;
+    color: #d8f3dc;
+    background-color: #74c69d;
+    display: inline-block;
+    padding: 10px 12px;
+    cursor: pointer;
+
+    &:hover {
+        color: #74c69d;
+        background-color: #d8f3dc;
+        
+        
+    }
+}
+
+.error-message {
+    margin: 60px 0;
+    text-align: center;
+}
